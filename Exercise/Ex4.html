@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic HTML Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        nav a { margin-right: 15px; text-decoration: none; font-weight: bold; cursor: pointer; }
+        section { margin-top: 20px; padding: 10px; border: 1px solid #ccc; display: none; }
+        footer { margin-top: 30px; padding: 10px; background: #f0f0f0; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Explore The World</h1>
+        <p>A travel blog sharing stories and tips from around the globe.</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('about')">About Us</a>
+        <a onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <!-- SECTIONS -->
+    <section id="home">
+        <h2>Welcome to Our Travel Journal</h2>
+        <p>Traveling helps us grow, learn and experience amazing moments.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate travelers who love discovering new cultures.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: exploreworld@example.com</p>
+        <p>Instagram: @explore_world_blog</p>
+    </section>
+
+    <!-- ASIDE -->
+    <aside>
+        <h3>Fun Fact</h3>
+        <p>The Eiffel Tower grows up to 15 cm in summer due to heat!</p>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Explore The World Blog</p>
+    </footer>
+
+    <script>
+        // Hide all then show selected
+        function showSection(id) {
+            document.querySelectorAll("section").forEach(sec => sec.style.display = "none");
+            document.getElementById(id).style.display = "block";
+        }
+
+        // Show home by default
+        showSection('home');
+    </script>
+
+</body>
+</html>

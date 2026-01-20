@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Projects — Organized</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    header, section, footer { margin-bottom: 50px; }
+    h1, h2 { color: #333; }
+    form { margin-top: 10px; }
+    fieldset { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; }
+    legend { font-weight: bold; }
+    label { display: block; margin-top: 10px; }
+    input[type=text], input[type=email], input[type=number], select, textarea { 
+      width: 100%; max-width: 400px; padding: 5px; margin-top: 5px;
+    }
+    input[type=radio], input[type=checkbox] { margin-right: 5px; }
+    button { margin-top: 15px; padding: 8px 15px; cursor: pointer; }
+    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+    table, th, td { border: 1px solid #000; padding: 8px; text-align: left; }
+    details { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Module 9 — Real-World Mini Projects</h1>
+</header>
+
+<!-- PROJECT 1: Contact Us Page -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <fieldset>
+      <legend>Contact Information</legend>
+      <label for="cname">Full Name:</label>
+      <input id="cname" type="text" placeholder="Enter your name" required>
+
+      <label for="cemail">Email:</label>
+      <input id="cemail" type="email" placeholder="Enter your email" required>
+
+      <label for="cmsg">Message:</label>
+      <textarea id="cmsg" rows="4" placeholder="Write your message"></textarea>
+
+      <button type="submit">Send Message</button>
+    </fieldset>
+  </form>
+</section>
+
+<!-- PROJECT 2: Student Registration Page -->
+<section id="registration">
+  <h2>Student Registration</h2>
+  <form>
+    <fieldset>
+      <legend>Personal Info</legend>
+      <label for="sname">Name:</label>
+      <input id="sname" type="text" placeholder="Full Name" required>
+
+      <label for="sage">Age:</label>
+      <input id="sage" type="number" placeholder="Your Age">
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" id="male"><label for="male" style="display:inline;">Male</label>
+      <input type="radio" name="gender" id="female"><label for="female" style="display:inline;">Female</label>
+      <input type="radio" name="gender" id="other"><label for="other" style="display:inline;">Other</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Course & Address</legend>
+      <label for="course">Select Course:</label>
+      <select id="course">
+        <option>BCA</option>
+        <option>BIT</option>
+        <option>CSIT</option>
+      </select>
+
+      <label for="address">Address:</label>
+      <textarea id="address" rows="3" placeholder="Enter your full address"></textarea>
+    </fieldset>
+
+    <button type="submit">Register</button>
+  </form>
+</section>
+
+<!-- PROJECT 3: Admin Data Table -->
+<section id="admin-table">
+  <h2>Admin Data Table</h2>
+  <table>
+    <caption>Student Database</caption>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>101</td>
+        <td>Ram</td>
+        <td>BCA</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Shyam</td>
+        <td>CSIT</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Sita</td>
+        <td>BIT</td>
+        <td>A+</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- PROJECT 4: FAQ Page -->
+<section id="faq">
+  <h2>FAQ</h2>
+  <details>
+    <summary>What is HTML?</summary>
+    <p>HTML stands for HyperText Markup Language.</p>
+  </details>
+
+  <details>
+    <summary>Do I need a code editor?</summary>
+    <p>Yes, editors like VS Code or Sublime make coding easier.</p>
+  </details>
+
+  <details>
+    <summary>Can I learn web development fast?</summary>
+    <p>With practice and building projects, absolutely yes!</p>
+  </details>
+</section>
+
+<footer>
+  <p>&copy; 2026 Mini Project Showcase</p>
+</footer>
+
+</body>
+</html>
