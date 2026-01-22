@@ -29,7 +29,7 @@ p {
 
 /* ID Selector */
 #student-name { 
-    color: #1882f3;
+    color: #044672;
     font-weight: bold;
     font-size: 24px;
 }
@@ -42,7 +42,7 @@ h2, h3 {
 
 /* Descendant Selectors */
 #courses .course-list li {
-    color: #27c94d;
+    color: #61d87d;
     font-weight: bold;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: #bfd9f5;
     color: white;
     padding: 20px;
     margin-bottom: 20px;
@@ -76,5 +76,10 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
+    background-color: aquamarine;
+    background-image: url("https://images.unsplash.com/photo-1503264116251-35a269479413");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
