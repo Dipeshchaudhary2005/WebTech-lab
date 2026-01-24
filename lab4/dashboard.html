@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - StockFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-body">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">StockFlow</div>
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item active">Dashboard</a>
+            <a href="manage.html" class="nav-item">Inventory</a>
+            <a href="#" class="nav-item">Orders</a>
+            <a href="#" class="nav-item">Analytics</a>
+            <a href="#" class="nav-item">Settings</a>
+        </nav>
+        <a href="index.html" class="btn-logout">Logout</a>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Header -->
+        <header class="dashboard-header">
+            <h1 class="page-title">Dashboard</h1>
+            <div class="header-actions">
+                <div class="notification-badge">
+                    <span class="badge-count">3</span>
+                    <div class="user-avatar"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Stats Cards -->
+        <div class="stats-container">
+            <div class="stat-card card-1">
+                <div class="stat-content">
+                    <p class="stat-label">Total Products</p>
+                    <p class="stat-value">1,234</p>
+                    <p class="stat-change positive">+12% from last month</p>
+                </div>
+                <div class="stat-icon"></div>
+            </div>
+
+            <div class="stat-card card-2">
+                <div class="stat-content">
+                    <p class="stat-label">Low Stock Items</p>
+                    <p class="stat-value">23</p>
+                    <p class="stat-change negative">-5% from last month</p>
+                </div>
+                <div class="stat-icon"></div>
+            </div>
+
+            <div class="stat-card card-3">
+                <div class="stat-content">
+                    <p class="stat-label">Orders Today</p>
+                    <p class="stat-value">89</p>
+                    <p class="stat-change positive">+18% from last month</p>
+                </div>
+                <div class="stat-icon"></div>
+            </div>
+
+            <div class="stat-card card-4">
+                <div class="stat-content">
+                    <p class="stat-label">Revenue</p>
+                    <p class="stat-value">$45,678</p>
+                    <p class="stat-change positive">+25% from last month</p>
+                </div>
+                <div class="stat-icon"></div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="charts-container">
+            <!-- Inventory Overview -->
+            <div class="chart-card">
+                <h3 class="chart-title">Inventory Overview</h3>
+                <div class="progress-bars">
+                    <div class="progress-item">
+                        <span class="progress-label">Category 1</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                        <span class="progress-value">60%</span>
+                    </div>
+                    <div class="progress-item">
+                        <span class="progress-label">Category 2</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                        <span class="progress-value">80%</span>
+                    </div>
+                    <div class="progress-item">
+                        <span class="progress-label">Category 3</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 45%"></div>
+                        </div>
+                        <span class="progress-value">45%</span>
+                    </div>
+                    <div class="progress-item">
+                        <span class="progress-label">Category 4</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%"></div>
+                        </div>
+                        <span class="progress-value">90%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="chart-card">
+                <h3 class="chart-title">Recent Activity</h3>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-dot"></div>
+                        <span class="activity-text">New order received</span>
+                        <span class="activity-time">1h ago</span>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-dot"></div>
+                        <span class="activity-text">Stock updated</span>
+                        <span class="activity-time">2h ago</span>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-dot"></div>
+                        <span class="activity-text">Low stock alert</span>
+                        <span class="activity-time">3h ago</span>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-dot"></div>
+                        <span class="activity-text">Product added</span>
+                        <span class="activity-time">4h ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

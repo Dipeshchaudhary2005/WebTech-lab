@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management - StockFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-body">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">StockFlow</div>
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item">Dashboard</a>
+            <a href="manage.html" class="nav-item active">Inventory</a>
+            <a href="#" class="nav-item">Orders</a>
+            <a href="#" class="nav-item">Analytics</a>
+            <a href="#" class="nav-item">Settings</a>
+        </nav>
+        <a href="index.html" class="btn-logout">Logout</a>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Header -->
+        <header class="dashboard-header">
+            <h1 class="page-title">Inventory Management</h1>
+            <button class="btn-primary">+ Add Product</button>
+        </header>
+
+        <!-- Search and Filter -->
+        <div class="search-filter">
+            <input type="text" class="search-input" placeholder="Search products...">
+            <select class="filter-select">
+                <option>All Categories</option>
+                <option>Electronics</option>
+                <option>Furniture</option>
+                <option>Office Supplies</option>
+            </select>
+        </div>
+
+        <!-- Products Table -->
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Stock</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="product-cell">
+                                <div class="product-image"></div>
+                                <span class="product-name">Laptop Pro 15"</span>
+                            </div>
+                        </td>
+                        <td>Electronics</td>
+                        <td>45</td>
+                        <td class="price">$1,299</td>
+                        <td><span class="status-badge status-success">In Stock</span></td>
+                        <td class="actions-cell">
+                            <a href="#" class="action-link edit">Edit</a>
+                            <a href="#" class="action-link delete">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product-cell">
+                                <div class="product-image"></div>
+                                <span class="product-name">Wireless Mouse</span>
+                            </div>
+                        </td>
+                        <td>Electronics</td>
+                        <td>12</td>
+                        <td class="price">$29</td>
+                        <td><span class="status-badge status-warning">Low Stock</span></td>
+                        <td class="actions-cell">
+                            <a href="#" class="action-link edit">Edit</a>
+                            <a href="#" class="action-link delete">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product-cell">
+                                <div class="product-image"></div>
+                                <span class="product-name">Office Chair</span>
+                            </div>
+                        </td>
+                        <td>Furniture</td>
+                        <td>78</td>
+                        <td class="price">$199</td>
+                        <td><span class="status-badge status-success">In Stock</span></td>
+                        <td class="actions-cell">
+                            <a href="#" class="action-link edit">Edit</a>
+                            <a href="#" class="action-link delete">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product-cell">
+                                <div class="product-image"></div>
+                                <span class="product-name">Desk Lamp</span>
+                            </div>
+                        </td>
+                        <td>Furniture</td>
+                        <td>5</td>
+                        <td class="price">$45</td>
+                        <td><span class="status-badge status-warning">Low Stock</span></td>
+                        <td class="actions-cell">
+                            <a href="#" class="action-link edit">Edit</a>
+                            <a href="#" class="action-link delete">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product-cell">
+                                <div class="product-image"></div>
+                                <span class="product-name">USB Cable</span>
+                            </div>
+                        </td>
+                        <td>Electronics</td>
+                        <td>234</td>
+                        <td class="price">$12</td>
+                        <td><span class="status-badge status-success">In Stock</span></td>
+                        <td class="actions-cell">
+                            <a href="#" class="action-link edit">Edit</a>
+                            <a href="#" class="action-link delete">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
