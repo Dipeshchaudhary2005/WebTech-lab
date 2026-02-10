@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📅 Daily Planner</h1>
+            <div class="date-display" id="currentDate"></div>
+        </header>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number" id="totalTasks">0</div>
+                <div class="stat-label">Total Tasks</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="completedTasks">0</div>
+                <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="pendingTasks">0</div>
+                <div class="stat-label">Pending</div>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <div class="form-group">
+                <label for="taskTitle">Task Title</label>
+                <input type="text" id="taskTitle" placeholder="Enter task title...">
+            </div>
+
+            <div class="form-group">
+                <label for="taskDescription">Description (Optional)</label>
+                <textarea id="taskDescription" placeholder="Add details about your task..."></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="taskTime">Time</label>
+                    <input type="time" id="taskTime">
+                </div>
+
+                <div class="form-group">
+                    <label for="taskPriority">Priority</label>
+                    <select id="taskPriority">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="addTaskBtn" onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="tasks-section">
+            <div class="section-title">Your Tasks</div>
+
+            <div class="filter-section">
+                <button class="filter-btn active" onclick="filterTasks('all', event)">All</button>
+                <button class="filter-btn" onclick="filterTasks('pending', event)">Pending</button>
+                <button class="filter-btn" onclick="filterTasks('completed', event)">Completed</button>
+                <button class="filter-btn" onclick="filterTasks('high', event)">High Priority</button>
+            </div>
+
+            <div class="tasks-list" id="tasksList"></div>
+        </div>
+    </div>
+
+    <!-- Link JS -->
+    <script src="script.js"></script>
+</body>
+</html>
